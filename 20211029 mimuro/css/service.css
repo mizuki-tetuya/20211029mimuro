@@ -86,13 +86,8 @@ body {
   top: 14px;
   transform: rotate(-45deg);
 }
-.in{
+.in {
   transform: translateX(100%);
-}
-/*サービス一列*/
-.service-wrap {
-  display: flex;
-  flex-direction: column;
 }
 }
 .header-ttl {
@@ -126,29 +121,26 @@ a:hover {
 .header-nav-item:not(:last-child) {
   margin-right: 20px;
 }
-
 /*写真*/
 .future-card {
   width: 100%;
-  height: 250px;
-  position: relative;
-  margin-bottom: 70px;
+  height: 200px;
   margin-top: 60px;
-  z-index: 20;
-}
-.future-card-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background-image: url(../img/mv.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 60px;
 }
 .future-card-ttl {
-  position: absolute;
-  top: 50%;
-  right: 50%;
+  width: 100%;
+  height: 100%;
   font-size: 24px;
   font-weight: bold;
   color: white;
-  transform: translate(50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*コンテンツ内容*/
 .service {
@@ -251,4 +243,24 @@ a:hover {
 }
 .footer-nav-item a {
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-nav-item {
+    padding: 10px 0;
+  }
+  .footer-nav-item:not(:last-child) {
+  border-right: none;
+  }
 }
