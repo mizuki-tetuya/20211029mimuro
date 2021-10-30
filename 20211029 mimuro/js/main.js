@@ -74,3 +74,11 @@ document.addEventListener('DOMContentLoaded', function(){
 	blogTexts[i].addEventListener('click', menuClick, false);
 	}
 }, false);
+
+/*ドロワーメニュー*/
+const target = document.getElementById("menu");
+target.addEventListener('click', () => {
+  target.classList.toggle('open');
+  const navList = document.getElementsByClassName("header-nav");
+  navList.classList.toggle('in');
+});
