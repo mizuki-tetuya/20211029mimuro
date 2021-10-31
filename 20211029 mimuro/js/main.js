@@ -79,49 +79,6 @@ document.addEventListener('DOMContentLoaded', function(){
 const target = document.getElementById("menu");
 target.addEventListener('click', () => {
   target.classList.toggle('open');
-  const navList = document.getElementById("header-nav");
-  navList.classList.toggle('in');
-});
-/*事業メニュー*/
-const targetService = document.getElementById("menu");
-targetService.addEventListener('click', () => {
-  targetService.classList.toggle('open');
-  const navList2 = document.getElementById("header-nav-service");
-  navList2.classList.toggle('in');
-});
-
-/*ニュースドロワーメニュー */
-const targetNews = document.getElementById("menu");
-targetNews.addEventListener('click', () => {
-  targetNews.classList.toggle('open');
-  const navList3 = document.getElementById("header-nav-news");
-  navList3.classList.toggle('in');
-});
-/*社員ブログドロワーメニュー */
-const targetBlog = document.getElementById("menu");
-targetBlog.addEventListener('click', () => {
-  targetBlog.classList.toggle('open');
-  const navList4 = document.getElementById("header-nav-blog");
-  navList4.classList.toggle('in');
-});
-/*会社概要ドロワーメニュー */
-const targetCompany = document.getElementById("menu");
-targetCompany.addEventListener('click', () => {
-  targetCompany.classList.toggle('open');
-  const navList5 = document.getElementById("header-nav-company");
-  navList5.classList.toggle('in');
-});
-/*採用情報ドロワーメニュー */
-const targetRecruit = document.getElementById("menu");
-targetRecruit.addEventListener('click', () => {
-  targetRecruit.classList.toggle('open');
-  const navList6 = document.getElementById("header-nav-recruit");
-  navList6.classList.toggle('in');
-});
-/*お問い合わせドロワーメニュー */
-const targetContact = document.getElementById("menu");
-targetContact.addEventListener('click', () => {
-  targetContact.classList.toggle('open');
-  const navList7 = document.getElementById("header-nav-contact");
-  navList7.classList.toggle('in');
+  const nav = document.getElementById("header-nav");
+  nav.classList.toggle('in');
 });
